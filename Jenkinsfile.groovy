@@ -15,7 +15,7 @@ pipeline {
                         env.JIRA_ISSUE_KEY = matcher[0][1]
                         echo "Found Jira Issue Key: ${env.JIRA_ISSUE_KEY}"
                     } else {
-                        error("No Jira Issue Key found in commit message.")
+                        error("No Jira Issue Key found in commit message.") 
                     }
                 }
             }
